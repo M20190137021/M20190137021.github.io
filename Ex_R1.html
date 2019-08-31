@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Questão R</title>
+<script>
+// Programa calcula AAAAAAAAAAAAAAA
+// Declaração de variáveis
+// Entrada
+var Va; // Quantidade de votos para o candidato A
+var Vb; // Quantidade de votos para o candidato B
+var Vc; // Quantidade de votos para o candidato C
+var VB; // Total de votos em branco
+var VN; // Total de votos nulos
+// Saída
+var VT; // Quantidade total de votos
+var VV; // Quantidade de votos válidos
+var VTVV; // Percentual de votos válidos em relação à quantidade de eleitores
+var VTVa; // Percentual de votos válidos do candidato A em relação à quantidade de eleitores
+var VTVb; // Percentual de votos válidos do candidato B em relação à quantidade de eleitores
+var VTVc; // Percentual de votos válidos do candidato C em relação à quantidade de eleitores
+var VTVB; // Percentual de votos em branco em relação à quantidade de eleitores
+var VTVN; // Percentual de votos nulos em relação à quantidade de eleitores
+// Atribuição
+Va = parseInt(prompt("Quantos eleitores votaram em A? "));
+Vb = parseInt(prompt("Quantos eleitores votaram em B? "));
+Vc = parseInt(prompt("Quantos eleitores votaram em C? "));
+VB = parseInt(prompt("Quantos eleitores votaram em branco? "));
+VN = parseInt(prompt("Quantos eleitores votaram nulo? "));
+//Processamento
+VT = Va+Vb+Vc+VB+VN
+VV = Va+Vb+Vc
+VTVV = (VV/VT)*100
+VTVa = (Va/VT)*100
+VTVb = (Vb/VT)*100
+VTVc = (Vc/VT)*100
+VTVB = (VB/VT)*100
+VTVN = (VN/VT)*100
+
+//Saída 
+document.writeln("<table BORDER =1>");
+	document.writeln("<tr>");
+		document.writeln("<th width = 60> Nº de Eleitores </th>");
+		document.writeln("<th width = 60> Votos em A");
+		document.writeln("<th width = 60> Votos em B </th>");
+		document.writeln("<th width = 60> Votos em C </th>");
+		document.writeln("<th width = 60> Votos Brancos </th>");
+		document.writeln("<th width = 60> Votos Nulos </th>");
+		document.writeln("<th width = 60> Votos Válidos </th>");
+		document.writeln("<th width = 60> % VT/ Votos Válidos </th>");
+		document.writeln("<th width = 60> % VT/ Votos em A </th>");
+		document.writeln("<th width = 60> % VT/ Votos em B </th>");
+		document.writeln("<th width = 60> % VT/ Votos em C </th>");
+		document.writeln("<th width = 60> % VT/ Votos em Branco </th>");
+		document.writeln("<th width = 60> % VT/ Votos Nulos </th>");
+	document.writeln("</tr>");
+	document.writeln("<tr>");
+		document.writeln("<td>" + VT + "</td>");
+		document.writeln("<td>" + Va + "</td>");
+		document.writeln("<td>" + Vb + "</td>");
+		document.writeln("<td>" + Vc + "</td>");
+		document.writeln("<td>" + VB + "</td>");
+		document.writeln("<td>" + VN + "</td>");
+		document.writeln("<td>" + VV + "</td>");
+		document.writeln("<td>" + VTVV.toFixed(2) + " % </td>");
+		document.writeln("<td>" + VTVa.toFixed(2) + " % </td>");
+		document.writeln("<td>" + VTVb.toFixed(2) + " % </td>");
+		document.writeln("<td>" + VTVc.toFixed(2) + " % </td>");
+		document.writeln("<td>" + VTVB.toFixed(2) + " % </td>");
+		document.writeln("<td>" + VTVN.toFixed(2) + " % </td>");
+	document.writeln("</tr>");
+document.writeln("</table>");
+</script>
+</head>
+<body>
+
+
+</body>
+</html>
