@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script>
+
+
+// Entrada
+	var SM; //salario mensal
+	var PR; //percentual de reajuste
+
+//Saida
+	var X ; //Novo salário
+
+// Leitura de dados
+	SM = parseFloat(prompt("Digite o salário mensal : ")) ;
+	PR = parseFloat(prompt("Digite o percentual de reajuste : ")) ;
+
+//Processamento
+	X = SM + (PR*SM)/100
+//Saida
+	document.writeln("<h1> Novo salário =$"+"" + X.toFixed(2) + "</h1>");
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

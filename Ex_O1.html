@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script>
+//Programa de soma e multiplicação de variáveis 
+// Entrada
+	//determinação de variaveis 
+	var A;
+	var B; 
+	var C;
+	var D;
+//Saida
+	var P ; //Produto de A e C
+	var S ; // Soma de B e D
+// Leitura de dados
+	A = parseInt(prompt("Digite um numero inteiro para A : ")) ;
+	B = parseInt(prompt("Digite um numero inteiro para B : ")) ;
+	C = parseInt(prompt("Digite um numero inteiro para C : ")) ;
+	D = parseInt(prompt("Digite um numero inteiro para D : ")) ;
+//Processamento
+	P = A*C ;
+	S = B + D;
+//Saida
+	document.writeln("<table BORDER =1>");
+		document.writeln("<tr>");
+			document.writeln("<th width = 60> A * C </th>");
+			document.writeln("<th width = 60> B + D </th>");
+		document.writeln("<tr>");
+			document.writeln("<td>" + P.toFixed(2) + "</td>");
+			document.writeln("<td>" + S.toFixed(2) + "</td>");
+		document.writeln("</tr>");
+	document.writeln("</table>");
+</script>
+</head>
+<body>
+</body>
+</html>
